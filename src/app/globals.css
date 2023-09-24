@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  @apply bg-accent text-accent-content;
+}
+
+/* Scrollbars start */
+* {
+  scrollbar-width: thin;
+  /* scrollbar-color: hsl(var(--p)) hsl(var(--n)); */
+  scrollbar-color: hsl(var(--p)) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/*
+*::-webkit-scrollbar-track {
+  background: hsl(var(--n));
+}
+*/
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--p));
+  border-radius: 0.25rem;
+  /* border: 3px solid hsl(var(--n)); */
+}
+/* Scrollbars end */
